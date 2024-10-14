@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Prank</title>
+    <script>
+        document.addEventListener('mousemove', function(event) {
+            var x = Math.random() * window.innerWidth;
+            var y = Math.random() * window.innerHeight;
+            window.scrollTo(x, y);
+        });
+    </script>
+    <style>
+        body {
+            height: 200vh; /* Allows scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Try to move your mouse!</h1>
+</body>
+</html>
